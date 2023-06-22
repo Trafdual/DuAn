@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+    <ImageView
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Tên đăng nhập"
+            android:id="@+id/edusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginBottom="20dp"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:hint="Mật khẩu"
+            android:id="@+id/edpassword"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox
+        android:layout_marginBottom="20dp"
+        android:id="@+id/checkPass"
+        android:text="Lưu mật khẩu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Đăng Nhập"
+         android:layout_weight="1"
+            android:id="@+id/btnLogin"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnHuy"
+            android:layout_marginLeft="10dp"
+android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="Hủy" />
+
+    </LinearLayout>
+
+</LinearLayout>

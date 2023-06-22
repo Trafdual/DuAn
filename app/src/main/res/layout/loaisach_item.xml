@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Mã Tv"
+            android:textSize="14dp"
+            android:id="@+id/tvMaloai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Tên Loại Sách"
+            android:textSize="14dp"
+            android:id="@+id/tvTenloai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Delete0"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+</LinearLayout>

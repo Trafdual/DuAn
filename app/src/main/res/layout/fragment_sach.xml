@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="fragment.SachFragment">
+    <RelativeLayout
+        android:background="#2FBCFB"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <EditText
+            android:id="@+id/edttimkiem"
+            android:textColorHint="#000000"
+            android:hint="Nhập tên sách cần tìm"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/btntim"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_search_24" />
+    </RelativeLayout>
+<ListView
+    android:layout_marginTop="60dp"
+    android:id="@+id/listSach"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:id="@+id/fab1"
+    android:layout_gravity="bottom|right"
+    android:layout_margin="16dp"
+    android:src="@drawable/ic_baseline_add_24"
+    app:layout_anchorGravity="bottom|right|end"
+    android:layout_height="wrap_content"/>
+</FrameLayout>

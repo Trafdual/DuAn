@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <EditText
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="mã phiếu mượn"
+        android:id="@+id/edtMapm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/spMaTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/spmasach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="Ngày: "
+        android:id="@+id/tvNgay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="Tiền thuê: "
+        android:id="@+id/tvtienthue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:text="Đã trả sách"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/checktrasach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<LinearLayout
+    android:layout_margin="20dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_weight="1"
+        android:layout_marginHorizontal="20dp"
+        android:text="Lưu"
+        android:id="@+id/btnSavePM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_weight="1"
+        android:layout_marginHorizontal="20dp"
+        android:text="Hủy"
+        android:id="@+id/btnHuyPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+</LinearLayout>
